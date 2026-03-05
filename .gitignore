@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Local config
+config/local.yaml
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate*
+terraform/*.tfplan
+
+# Secrets
+**/secrets/
+*.pem
+*.key

@@ -1,0 +1,11 @@
+.git
+__pycache__
+*.pyc
+.env
+.venv
+tests/
+scripts/
+terraform/
+config/
+README.md
+requirements-dev.txt
