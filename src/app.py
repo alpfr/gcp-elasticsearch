@@ -94,6 +94,20 @@ class ElasticsearchClient:
 es_client = ElasticsearchClient()
 
 
+@app.route("/", methods=["GET"])
+def root():
+    return jsonify({
+        "service": "Elasticsearch API",
+        "endpoints": {
+            "GET /": "This page",
+            "GET /health": "Health check",
+            "POST /search": "Search documents (body: index, query)",
+            "POST /index": "Index a document (body: index, document, id?)",
+            "POST /bulk": "Bulk index documents (body: index, documents)",
+        },
+    }), 200
+
+
 @app.route("/health", methods=["GET"])
 def health():
     try:
